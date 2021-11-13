@@ -125,6 +125,8 @@
 		2CE47D3E27406B2500CDBA53 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		2CE47D3F27406B2500CDBA53 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2CE47D4027406B2500CDBA53 /* Brewfile.lock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Brewfile.lock.json; sourceTree = "<group>"; };
+		2CE47D412740755A00CDBA53 /* package.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
+		2CE47D422740756800CDBA53 /* yarn.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = yarn.lock; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,8 @@
 				2CE47D3D27406B1800CDBA53 /* Brewfile */,
 				2CE47D3E27406B2500CDBA53 /* LICENSE */,
 				2CE47D4027406B2500CDBA53 /* Brewfile.lock.json */,
+				2CE47D412740755A00CDBA53 /* package.json */,
+				2CE47D422740756800CDBA53 /* yarn.lock */,
 				2CE47D3F27406B2500CDBA53 /* README.md */,
 				2CE47D2E274064F000CDBA53 /* Extensions */,
 				2CE47CD2274064E500CDBA53 /* Products */,
