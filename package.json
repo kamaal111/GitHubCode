@@ -1,0 +1,23 @@
+{
+  "name": "githubcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Shared/Resources/Script.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamaal111/GitHubCode.git"
+  },
+  "author": "Kamaal <kamaal.f1@gmail.com> (https://github.com/kamaal111)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kamaal111/GitHubCode/issues"
+  },
+  "homepage": "https://github.com/kamaal111/GitHubCode#readme",
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "prettier": "^2.4.1"
+  }
+}
