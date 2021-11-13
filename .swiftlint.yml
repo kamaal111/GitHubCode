@@ -17,7 +17,6 @@ opt_in_rules:
   - first_where
   - identical_operands
   - implicit_return
-  - implicitly_unwrapped_optional
   - last_where
   - legacy_random
   - literal_expression_end_indentation
@@ -52,4 +51,4 @@ excluded:
 identifier_name:
   min_length:
     warning: 2
-  allowed_symbols: "_"
+  allowed_symbols: '_'
