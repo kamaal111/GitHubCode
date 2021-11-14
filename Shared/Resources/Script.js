@@ -12,7 +12,7 @@ function show(platform, enabled) {
   }
 }
 
-function openPreferences() {
+function openPreferences(_event) {
   webkit.messageHandlers.controller.postMessage('open-preferences');
 }
 

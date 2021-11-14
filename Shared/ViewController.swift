@@ -16,8 +16,6 @@ import SafariServices
 typealias PlatformViewController = NSViewController
 #endif
 
-let extensionBundleIdentifier = "io.kamaal.GitHubCode.Extension"
-
 class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMessageHandler {
 
     @IBOutlet var webView: WKWebView!
@@ -44,16 +42,17 @@ class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMess
         #elseif os(macOS)
         webView.evaluateJavaScript("show('mac')")
 
-        SFSafariExtensionManager.getStateOfSafariExtension(withIdentifier: extensionBundleIdentifier) { state, error in
-            guard let state = state, error == nil else {
-                // Insert code to inform the user that something went wrong.
-                return
-            }
+        SFSafariExtensionManager.getStateOfSafariExtension(
+            withIdentifier: Constants.extensionBundleIdentifier) { state, error in
+                guard let state = state, error == nil else {
+                    // Insert code to inform the user that something went wrong.
+                    return
+                }
 
-            DispatchQueue.main.async {
-                webView.evaluateJavaScript("show('mac', \(state.isEnabled)")
+                DispatchQueue.main.async {
+                    webView.evaluateJavaScript("show('mac', \(state.isEnabled)")
+                }
             }
-        }
         #endif
     }
 
@@ -61,7 +60,7 @@ class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMess
         #if os(macOS)
         guard message.body as? String == "open-preferences" else { return }
 
-        SFSafariApplication.showPreferencesForExtension(withIdentifier: extensionBundleIdentifier) { error in
+        SFSafariApplication.showPreferencesForExtension(withIdentifier: Constants.extensionBundleIdentifier) { error in
             guard error == nil else {
                 // Insert code to inform the user that something went wrong.
                 return
