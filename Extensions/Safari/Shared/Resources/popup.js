@@ -1,9 +1,7 @@
 // popup.js
 
-document.getElementById('do-something').addEventListener('click', (event) => {
-  event.preventDefault();
-
-  console.log('doing something!');
-});
-
-const mainMessage = document.getElementById('main-message');
+const url = window.localStorage.getItem('github-url');
+if (url != null) {
+  const mainMessage = document.getElementById('main-message');
+  mainMessage.innerText = `Found ${url}`;
+}

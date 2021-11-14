@@ -5,7 +5,7 @@ function handleGithubContentFound(sender, sendResponse) {
 
   sendResponse({ type: 'github-url', url: sender });
 
-  // TODO: Save url somewhere
+  window.localStorage.setItem('github-url', sender.url);
 }
 
 browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
