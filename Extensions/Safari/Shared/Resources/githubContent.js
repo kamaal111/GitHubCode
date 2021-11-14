@@ -7,9 +7,7 @@ function handleGithubUrl(response) {
 browser.runtime
   .sendMessage({ type: 'github-content-found' })
   .then((response) => {
-    if (response?.type == null) return;
-
-    switch (response.type) {
+    switch (response?.type) {
       case 'github-url':
         handleGithubUrl(response.url);
         break;

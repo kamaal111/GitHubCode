@@ -21,14 +21,16 @@
         "persistent": false
     },
 
-    "content_scripts": [{
-        "js": [
-            "githubContent.js"
-        ],
-        "matches": [
-            "*://github.com/*"
-        ]
-    }],
+    "content_scripts": [
+        {
+            "js": [
+                "githubContent.js"
+            ],
+            "matches": [
+                "*://github.com/*"
+            ]
+        }
+    ],
 
     "browser_action": {
         "default_popup": "en.lproj/popup.html",
