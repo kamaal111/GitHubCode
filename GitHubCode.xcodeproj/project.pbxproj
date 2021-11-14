@@ -43,8 +43,8 @@
 		2CE47D13274064E600CDBA53 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 2CE47CC7274064E500CDBA53 /* manifest.json */; };
 		2CE47D14274064E600CDBA53 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 2CE47CC8274064E500CDBA53 /* background.js */; };
 		2CE47D15274064E600CDBA53 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 2CE47CC8274064E500CDBA53 /* background.js */; };
-		2CE47D16274064E600CDBA53 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 2CE47CC9274064E500CDBA53 /* content.js */; };
-		2CE47D17274064E600CDBA53 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 2CE47CC9274064E500CDBA53 /* content.js */; };
+		2CE47D16274064E600CDBA53 /* githubContent.js in Resources */ = {isa = PBXBuildFile; fileRef = 2CE47CC9274064E500CDBA53 /* githubContent.js */; };
+		2CE47D17274064E600CDBA53 /* githubContent.js in Resources */ = {isa = PBXBuildFile; fileRef = 2CE47CC9274064E500CDBA53 /* githubContent.js */; };
 		2CE47D1A274064E600CDBA53 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 2CE47CCB274064E500CDBA53 /* popup.css */; };
 		2CE47D1B274064E600CDBA53 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 2CE47CCB274064E500CDBA53 /* popup.css */; };
 		2CE47D1C274064E600CDBA53 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 2CE47CCC274064E500CDBA53 /* popup.js */; };
@@ -109,7 +109,7 @@
 		2CE47CC6274064E500CDBA53 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 		2CE47CC7274064E500CDBA53 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
 		2CE47CC8274064E500CDBA53 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
-		2CE47CC9274064E500CDBA53 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		2CE47CC9274064E500CDBA53 /* githubContent.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = githubContent.js; sourceTree = "<group>"; };
 		2CE47CCB274064E500CDBA53 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
 		2CE47CCC274064E500CDBA53 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
 		2CE47CD1274064E500CDBA53 /* GitHubCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -237,12 +237,12 @@
 			children = (
 				2CE47CC5274064E500CDBA53 /* _locales */,
 				2CE47CC6274064E500CDBA53 /* images */,
-				2CE47CC7274064E500CDBA53 /* manifest.json */,
-				2CE47CC8274064E500CDBA53 /* background.js */,
-				2CE47CC9274064E500CDBA53 /* content.js */,
-				2C9E1B83274142F900CC5301 /* popup.html */,
 				2CE47CCB274064E500CDBA53 /* popup.css */,
+				2CE47CC8274064E500CDBA53 /* background.js */,
+				2CE47CC9274064E500CDBA53 /* githubContent.js */,
 				2CE47CCC274064E500CDBA53 /* popup.js */,
+				2CE47CC7274064E500CDBA53 /* manifest.json */,
+				2C9E1B83274142F900CC5301 /* popup.html */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -510,7 +510,7 @@
 				2CE47D10274064E600CDBA53 /* images in Resources */,
 				2CE47D12274064E600CDBA53 /* manifest.json in Resources */,
 				2CE47D0E274064E600CDBA53 /* _locales in Resources */,
-				2CE47D16274064E600CDBA53 /* content.js in Resources */,
+				2CE47D16274064E600CDBA53 /* githubContent.js in Resources */,
 				2CE47D1C274064E600CDBA53 /* popup.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,7 +525,7 @@
 				2CE47D11274064E600CDBA53 /* images in Resources */,
 				2CE47D13274064E600CDBA53 /* manifest.json in Resources */,
 				2CE47D0F274064E600CDBA53 /* _locales in Resources */,
-				2CE47D17274064E600CDBA53 /* content.js in Resources */,
+				2CE47D17274064E600CDBA53 /* githubContent.js in Resources */,
 				2CE47D1D274064E600CDBA53 /* popup.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
