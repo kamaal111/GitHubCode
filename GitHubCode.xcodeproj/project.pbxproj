@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C9E1B7127413D0500CC5301 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C9E1B7027413D0500CC5301 /* Main.html */; };
+		2C9E1B7227413D0500CC5301 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C9E1B7027413D0500CC5301 /* Main.html */; };
+		2C9E1B7827413E7100CC5301 /* GHCLocale in Frameworks */ = {isa = PBXBuildFile; productRef = 2C9E1B7727413E7100CC5301 /* GHCLocale */; };
+		2C9E1B7A27413E7A00CC5301 /* GHCLocale in Frameworks */ = {isa = PBXBuildFile; productRef = 2C9E1B7927413E7A00CC5301 /* GHCLocale */; };
 		2CE47CD5274064E500CDBA53 /* AppDelegate_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE47CD4274064E500CDBA53 /* AppDelegate_iOS.swift */; };
 		2CE47CD7274064E500CDBA53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE47CD6274064E500CDBA53 /* SceneDelegate.swift */; };
 		2CE47CDA274064E500CDBA53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE47CD8274064E500CDBA53 /* LaunchScreen.storyboard */; };
@@ -15,8 +19,6 @@
 		2CE47CE9274064E500CDBA53 /* Main_macOS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE47CE7274064E500CDBA53 /* Main_macOS.storyboard */; };
 		2CE47CF0274064E500CDBA53 /* GitHubCode Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2CE47CEF274064E500CDBA53 /* GitHubCode Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2CE47CFA274064E600CDBA53 /* GitHubCode Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2CE47CF9274064E600CDBA53 /* GitHubCode Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		2CE47D00274064E600CDBA53 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 2CE47CBB274064DC00CDBA53 /* Main.html */; };
-		2CE47D01274064E600CDBA53 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 2CE47CBB274064DC00CDBA53 /* Main.html */; };
 		2CE47D02274064E600CDBA53 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CE47CBD274064DC00CDBA53 /* Icon.png */; };
 		2CE47D03274064E600CDBA53 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CE47CBD274064DC00CDBA53 /* Icon.png */; };
 		2CE47D04274064E600CDBA53 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 2CE47CBE274064DC00CDBA53 /* Style.css */; };
@@ -90,7 +92,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2CE47CBC274064DC00CDBA53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		2C9E1B7027413D0500CC5301 /* Main.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Main.html; sourceTree = "<group>"; };
+		2C9E1B7427413D7C00CC5301 /* GHCLocale */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GHCLocale; sourceTree = "<group>"; };
+		2C9E1B7527413E6A00CC5301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CE47CBD274064DC00CDBA53 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		2CE47CBE274064DC00CDBA53 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
 		2CE47CBF274064DC00CDBA53 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
@@ -134,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C9E1B7A27413E7A00CC5301 /* GHCLocale in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C9E1B7827413E7100CC5301 /* GHCLocale in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +167,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C9E1B7327413D4900CC5301 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				2C9E1B7427413D7C00CC5301 /* GHCLocale */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		2C9E1B7627413E7100CC5301 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2CE47CB4274064DC00CDBA53 = {
 			isa = PBXGroup;
 			children = (
@@ -171,10 +192,12 @@
 				2CE47D422740756800CDBA53 /* yarn.lock */,
 				2CE47D3F27406B2500CDBA53 /* README.md */,
 				2CE47D2E274064F000CDBA53 /* Extensions */,
+				2C9E1B7327413D4900CC5301 /* Packages */,
 				2CE47CD2274064E500CDBA53 /* Products */,
 				2CE47D3927406A0D00CDBA53 /* Scripts */,
 				2CE47CB9274064DC00CDBA53 /* Shared */,
 				2CE47D322740673400CDBA53 /* Targets */,
+				2C9E1B7627413E7100CC5301 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,10 +220,10 @@
 		2CE47CBA274064DC00CDBA53 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2CE47CBB274064DC00CDBA53 /* Main.html */,
-				2CE47CBD274064DC00CDBA53 /* Icon.png */,
 				2CE47CBE274064DC00CDBA53 /* Style.css */,
+				2C9E1B7027413D0500CC5301 /* Main.html */,
 				2CE47CBF274064DC00CDBA53 /* Script.js */,
+				2CE47CBD274064DC00CDBA53 /* Icon.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -303,6 +326,7 @@
 		2CE47D37274068BE00CDBA53 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				2C9E1B7527413E6A00CC5301 /* Info.plist */,
 				2CE47CEA274064E500CDBA53 /* GitHubCode.entitlements */,
 			);
 			path = macOS;
@@ -335,6 +359,9 @@
 				2CE47CF2274064E500CDBA53 /* PBXTargetDependency */,
 			);
 			name = "GitHubCode (iOS)";
+			packageProductDependencies = (
+				2C9E1B7927413E7A00CC5301 /* GHCLocale */,
+			);
 			productName = "GitHubCode (iOS)";
 			productReference = 2CE47CD1274064E500CDBA53 /* GitHubCode.app */;
 			productType = "com.apple.product-type.application";
@@ -355,6 +382,9 @@
 				2CE47CFC274064E600CDBA53 /* PBXTargetDependency */,
 			);
 			name = "GitHubCode (macOS)";
+			packageProductDependencies = (
+				2C9E1B7727413E7100CC5301 /* GHCLocale */,
+			);
 			productName = "GitHubCode (macOS)";
 			productReference = 2CE47CE3274064E500CDBA53 /* GitHubCode.app */;
 			productType = "com.apple.product-type.application";
@@ -445,10 +475,10 @@
 			files = (
 				2CE47D02274064E600CDBA53 /* Icon.png in Resources */,
 				2CE47CDA274064E500CDBA53 /* LaunchScreen.storyboard in Resources */,
-				2CE47D00274064E600CDBA53 /* Main.html in Resources */,
 				2CE47D06274064E600CDBA53 /* Script.js in Resources */,
 				2CE47D0A274064E600CDBA53 /* Assets.xcassets in Resources */,
 				2CE47CDD274064E500CDBA53 /* Main_iOS.storyboard in Resources */,
+				2C9E1B7127413D0500CC5301 /* Main.html in Resources */,
 				2CE47D04274064E600CDBA53 /* Style.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,11 +488,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CE47D03274064E600CDBA53 /* Icon.png in Resources */,
+				2C9E1B7227413D0500CC5301 /* Main.html in Resources */,
 				2CE47D05274064E600CDBA53 /* Style.css in Resources */,
 				2CE47CE9274064E500CDBA53 /* Main_macOS.storyboard in Resources */,
 				2CE47D07274064E600CDBA53 /* Script.js in Resources */,
 				2CE47D0B274064E600CDBA53 /* Assets.xcassets in Resources */,
-				2CE47D01274064E600CDBA53 /* Main.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,14 +619,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2CE47CBB274064DC00CDBA53 /* Main.html */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CE47CBC274064DC00CDBA53 /* Base */,
-			);
-			name = Main.html;
-			sourceTree = "<group>";
-		};
 		2CE47CD8274064E500CDBA53 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -951,6 +973,7 @@
 				DEVELOPMENT_TEAM = DXUKH9VF73;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Targets/macOS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = GitHubCode;
 				INFOPLIST_KEY_NSMainStoryboardFile = Main_macOS;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -986,6 +1009,7 @@
 				DEVELOPMENT_TEAM = DXUKH9VF73;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Targets/macOS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = GitHubCode;
 				INFOPLIST_KEY_NSMainStoryboardFile = Main_macOS;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -1058,6 +1082,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C9E1B7727413E7100CC5301 /* GHCLocale */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GHCLocale;
+		};
+		2C9E1B7927413E7A00CC5301 /* GHCLocale */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GHCLocale;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2CE47CB5274064DC00CDBA53 /* Project object */;
 }
