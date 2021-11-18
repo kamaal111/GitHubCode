@@ -14,7 +14,7 @@ struct ContentView: View {
     }
 
     private var lastSelectedURL: String {
-        UserDefaults(suiteName: "io.kamaal.GitHubCode.Group")?.string(forKey: "webpage_url") ?? ""
+        UserDefaults(suiteName: Constants.appGroup)?.string(forKey: "webpage_url") ?? ""
     }
 }
 

@@ -22,11 +22,12 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
             tab?.getActivePage { page in
                 guard let page = page else { return }
                 page.getPropertiesWithCompletionHandler { properties in
-                    guard let webpageURL = properties?.url else { return }
-                    let codeURL = webpageURL.absoluteString.replacingOccurrences(of: "github.com/", with: "github.dev/")
-                    UserDefaults(suiteName: "io.kamaal.GitHubCode.Group")?
-                        .set(codeURL, forKey: "webpage_url")
-                    page.dispatchMessageToScript(withName: "redirectPage", userInfo: ["url": codeURL])
+                    guard let webpageURL = properties?.url,
+                          let webpageHost = SupportedWebHosts(rawValue: webpageURL.host ?? "") else { return }
+
+                    let redirectURL = webpageURL.absoluteString
+                        .replacingOccurrences(of: webpageHost.rawValue, with: webpageHost.replacement.rawValue)
+                    page.dispatchMessageToScript(withName: "redirectPage", userInfo: ["url": redirectURL])
                 }
             }
         }
@@ -35,8 +36,6 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     override func validateToolbarItem(
         in window: SFSafariWindow,
         validationHandler: @escaping ((Bool, String) -> Void)) {
-            // This is called when Safari's state changed in some way that would require
-            // the extension's toolbar item to be validated again.
             validationHandler(true, "")
         }
 
