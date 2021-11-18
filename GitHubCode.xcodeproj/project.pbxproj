@@ -44,6 +44,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2CF8E8162746D67200420BFD /* yarn.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = yarn.lock; sourceTree = "<group>"; };
 		6015D12E2746430700782DB9 /* Brewfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Brewfile; sourceTree = "<group>"; };
 		6015D12F2746431300782DB9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6015D1302746431300782DB9 /* Brewfile.lock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Brewfile.lock.json; sourceTree = "<group>"; };
@@ -122,13 +123,15 @@
 			isa = PBXGroup;
 			children = (
 				6015D12E2746430700782DB9 /* Brewfile */,
-				6015D1302746431300782DB9 /* Brewfile.lock.json */,
 				6015D1312746431300782DB9 /* LICENSE */,
+				6015D1302746431300782DB9 /* Brewfile.lock.json */,
+				6015D1322746438D00782DB9 /* package.json */,
+				2CF8E8162746D67200420BFD /* yarn.lock */,
 				6015D12F2746431300782DB9 /* README.md */,
-				6047BEF32746411F0083B111 /* Scripts */,
-				6047BEE827463EF00083B111 /* Targets */,
 				60AB1075274591BE00BC06F1 /* GitHubCode */,
 				60AB1074274591BE00BC06F1 /* Products */,
+				6047BEF32746411F0083B111 /* Scripts */,
+				6047BEE827463EF00083B111 /* Targets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,7 +166,6 @@
 		60AB108A274591E700BC06F1 /* Safari */ = {
 			isa = PBXGroup;
 			children = (
-				6015D1322746438D00782DB9 /* package.json */,
 				60AB108B274591E700BC06F1 /* SafariExtensionHandler.swift */,
 				60AB108D274591E700BC06F1 /* SafariExtensionViewController.swift */,
 				6047BEEA27463F190083B111 /* macOS */,
