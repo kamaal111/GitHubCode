@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C3A26B22746E86000AD27FD /* ShrimpExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 2C3A26B12746E86000AD27FD /* ShrimpExtensions */; };
+		2C3A26B52746E87000AD27FD /* ShrimpExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 2C3A26B42746E87000AD27FD /* ShrimpExtensions */; };
 		60AB1077274591BE00BC06F1 /* GitHubCodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB1076274591BE00BC06F1 /* GitHubCodeApp.swift */; };
 		60AB1079274591BE00BC06F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB1078274591BE00BC06F1 /* ContentView.swift */; };
 		60AB107B274591C600BC06F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60AB107A274591C600BC06F1 /* Assets.xcassets */; };
 		60AB107E274591C600BC06F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60AB107D274591C600BC06F1 /* Preview Assets.xcassets */; };
 		60AB108C274591E700BC06F1 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB108B274591E700BC06F1 /* SafariExtensionHandler.swift */; };
-		60AB108E274591E700BC06F1 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB108D274591E700BC06F1 /* SafariExtensionViewController.swift */; };
 		60AB1091274591E700BC06F1 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 60AB1090274591E700BC06F1 /* script.js */; };
 		60AB1093274591E700BC06F1 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 60AB1092274591E700BC06F1 /* ToolbarItemIcon.pdf */; };
-		60AB1096274591E700BC06F1 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60AB1094274591E700BC06F1 /* SafariExtensionViewController.xib */; };
 		60AB109B274591E700BC06F1 /* GitHubCode Safari.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 60AB1089274591E700BC06F1 /* GitHubCode Safari.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -59,10 +59,8 @@
 		60AB107F274591C600BC06F1 /* GitHubCode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GitHubCode.entitlements; sourceTree = "<group>"; };
 		60AB1089274591E700BC06F1 /* GitHubCode Safari.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GitHubCode Safari.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60AB108B274591E700BC06F1 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
-		60AB108D274591E700BC06F1 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
 		60AB1090274591E700BC06F1 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
 		60AB1092274591E700BC06F1 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
-		60AB1095274591E700BC06F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
 		60AB1097274591E700BC06F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60AB1098274591E700BC06F1 /* Safari.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Safari.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C3A26B22746E86000AD27FD /* ShrimpExtensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,12 +78,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C3A26B52746E87000AD27FD /* ShrimpExtensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C3A26B32746E87000AD27FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6047BEE827463EF00083B111 /* Targets */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +135,7 @@
 				6015D1322746438D00782DB9 /* package.json */,
 				2CF8E8162746D67200420BFD /* yarn.lock */,
 				6015D12F2746431300782DB9 /* README.md */,
+				2C3A26B32746E87000AD27FD /* Frameworks */,
 				60AB1075274591BE00BC06F1 /* GitHubCode */,
 				60AB1074274591BE00BC06F1 /* Products */,
 				6047BEF32746411F0083B111 /* Scripts */,
@@ -167,10 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				60AB108B274591E700BC06F1 /* SafariExtensionHandler.swift */,
-				60AB108D274591E700BC06F1 /* SafariExtensionViewController.swift */,
 				6047BEEA27463F190083B111 /* macOS */,
 				60AB108F274591E700BC06F1 /* Resources */,
-				60AB1094274591E700BC06F1 /* SafariExtensionViewController.xib */,
 			);
 			path = Safari;
 			sourceTree = "<group>";
@@ -203,6 +209,9 @@
 				60AB109A274591E700BC06F1 /* PBXTargetDependency */,
 			);
 			name = "GitHubCode (macOS)";
+			packageProductDependencies = (
+				2C3A26B12746E86000AD27FD /* ShrimpExtensions */,
+			);
 			productName = GitHubCode;
 			productReference = 60AB1073274591BE00BC06F1 /* GitHubCode.app */;
 			productType = "com.apple.product-type.application";
@@ -220,6 +229,9 @@
 			dependencies = (
 			);
 			name = "GitHubCode Safari (macOS)";
+			packageProductDependencies = (
+				2C3A26B42746E87000AD27FD /* ShrimpExtensions */,
+			);
 			productName = Safari;
 			productReference = 60AB1089274591E700BC06F1 /* GitHubCode Safari.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -251,6 +263,9 @@
 				Base,
 			);
 			mainGroup = 60AB106A274591BE00BC06F1;
+			packageReferences = (
+				2C3A26B02746E86000AD27FD /* XCRemoteSwiftPackageReference "ShrimpExtensions" */,
+			);
 			productRefGroup = 60AB1074274591BE00BC06F1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -275,7 +290,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60AB1096274591E700BC06F1 /* SafariExtensionViewController.xib in Resources */,
 				60AB1093274591E700BC06F1 /* ToolbarItemIcon.pdf in Resources */,
 				60AB1091274591E700BC06F1 /* script.js in Resources */,
 			);
@@ -317,7 +331,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60AB108E274591E700BC06F1 /* SafariExtensionViewController.swift in Sources */,
 				60AB108C274591E700BC06F1 /* SafariExtensionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,17 +344,6 @@
 			targetProxy = 60AB1099274591E700BC06F1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		60AB1094274591E700BC06F1 /* SafariExtensionViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				60AB1095274591E700BC06F1 /* Base */,
-			);
-			name = SafariExtensionViewController.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		60AB1080274591C600BC06F1 /* Debug */ = {
@@ -608,6 +610,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2C3A26B02746E86000AD27FD /* XCRemoteSwiftPackageReference "ShrimpExtensions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kamaal111/ShrimpExtensions.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C3A26B12746E86000AD27FD /* ShrimpExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C3A26B02746E86000AD27FD /* XCRemoteSwiftPackageReference "ShrimpExtensions" */;
+			productName = ShrimpExtensions;
+		};
+		2C3A26B42746E87000AD27FD /* ShrimpExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C3A26B02746E86000AD27FD /* XCRemoteSwiftPackageReference "ShrimpExtensions" */;
+			productName = ShrimpExtensions;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 60AB106B274591BE00BC06F1 /* Project object */;
 }

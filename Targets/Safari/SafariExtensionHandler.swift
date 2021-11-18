@@ -10,8 +10,6 @@ import SafariServices
 class SafariExtensionHandler: SFSafariExtensionHandler {
 
     override func messageReceived(withName messageName: String, from page: SFSafariPage, userInfo: [String: Any]?) {
-        // This method will be called when a content script provided by your
-        // extension calls safari.extension.dispatchMessage("message").
         page.getPropertiesWithCompletionHandler { properties in
             NSLog("The extension received a message (\(messageName)) from a script injected" +
                   " into (\(String(describing: properties?.url))) with userInfo (\(userInfo ?? [:]))")
@@ -19,11 +17,18 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     }
 
     override func toolbarItemClicked(in window: SFSafariWindow) {
-        // This method will be called when your toolbar item is clicked.
         NSLog("The extension's toolbar item was clicked")
         window.getActiveTab { tab in
-            guard let tab = tab else { return }
-            tab.close()
+            tab?.getActivePage { page in
+                guard let page = page else { return }
+                page.getPropertiesWithCompletionHandler { properties in
+                    guard let webpageURL = properties?.url else { return }
+                    let codeURL = webpageURL.absoluteString.replacingOccurrences(of: "github.com/", with: "github.dev/")
+                    UserDefaults(suiteName: "io.kamaal.GitHubCode.Group")?
+                        .set(codeURL, forKey: "webpage_url")
+                    page.dispatchMessageToScript(withName: "redirectPage", userInfo: ["url": codeURL])
+                }
+            }
         }
     }
 
@@ -34,9 +39,5 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
             // the extension's toolbar item to be validated again.
             validationHandler(true, "")
         }
-
-    override func popoverViewController() -> SFSafariExtensionViewController {
-        SafariExtensionViewController.shared
-    }
 
 }
