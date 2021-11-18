@@ -13,6 +13,7 @@
 		2C3A26B82746EDE100AD27FD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A26B62746EDE100AD27FD /* Constants.swift */; };
 		2C3A26BB2746FBE200AD27FD /* SupportedWebHosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A26BA2746FBE200AD27FD /* SupportedWebHosts.swift */; };
 		2C3A26BC2746FBE200AD27FD /* SupportedWebHosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A26BA2746FBE200AD27FD /* SupportedWebHosts.swift */; };
+		2C3A26BF2746FF3100AD27FD /* SFSafariWindow+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A26BE2746FF3100AD27FD /* SFSafariWindow+extensions.swift */; };
 		60AB1077274591BE00BC06F1 /* GitHubCodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB1076274591BE00BC06F1 /* GitHubCodeApp.swift */; };
 		60AB1079274591BE00BC06F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB1078274591BE00BC06F1 /* ContentView.swift */; };
 		60AB107B274591C600BC06F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60AB107A274591C600BC06F1 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		2C3A26B62746EDE100AD27FD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2C3A26BA2746FBE200AD27FD /* SupportedWebHosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportedWebHosts.swift; sourceTree = "<group>"; };
+		2C3A26BE2746FF3100AD27FD /* SFSafariWindow+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSafariWindow+extensions.swift"; sourceTree = "<group>"; };
 		2CF8E8162746D67200420BFD /* yarn.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = yarn.lock; sourceTree = "<group>"; };
 		6015D12E2746430700782DB9 /* Brewfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Brewfile; sourceTree = "<group>"; };
 		6015D12F2746431300782DB9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -104,6 +106,14 @@
 				2C3A26BA2746FBE200AD27FD /* SupportedWebHosts.swift */,
 			);
 			path = Enumerations;
+			sourceTree = "<group>";
+		};
+		2C3A26BD2746FF1D00AD27FD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2C3A26BE2746FF3100AD27FD /* SFSafariWindow+extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		6047BEE827463EF00083B111 /* Targets */ = {
@@ -191,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				60AB108B274591E700BC06F1 /* SafariExtensionHandler.swift */,
+				2C3A26BD2746FF1D00AD27FD /* Extensions */,
 				6047BEEA27463F190083B111 /* macOS */,
 				60AB108F274591E700BC06F1 /* Resources */,
 			);
@@ -349,6 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C3A26BF2746FF3100AD27FD /* SFSafariWindow+extensions.swift in Sources */,
 				60AB108C274591E700BC06F1 /* SafariExtensionHandler.swift in Sources */,
 				2C3A26B82746EDE100AD27FD /* Constants.swift in Sources */,
 				2C3A26BC2746FBE200AD27FD /* SupportedWebHosts.swift in Sources */,

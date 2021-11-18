@@ -17,18 +17,15 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     }
 
     override func toolbarItemClicked(in window: SFSafariWindow) {
-        NSLog("The extension's toolbar item was clicked")
-        window.getActiveTab { tab in
-            tab?.getActivePage { page in
-                guard let page = page else { return }
-                page.getPropertiesWithCompletionHandler { properties in
-                    guard let webpageURL = properties?.url,
-                          let webpageHost = SupportedWebHosts(rawValue: webpageURL.host ?? "") else { return }
+        window.getActivePage { page in
+            guard let page = page else { return }
+            page.getPropertiesWithCompletionHandler { properties in
+                guard let webpageURL = properties?.url,
+                      let webpageHost = SupportedWebHosts(rawValue: webpageURL.host ?? "") else { return }
 
-                    let redirectURL = webpageURL.absoluteString
-                        .replacingOccurrences(of: webpageHost.rawValue, with: webpageHost.replacement.rawValue)
-                    page.dispatchMessageToScript(withName: "redirectPage", userInfo: ["url": redirectURL])
-                }
+                let redirectURL = webpageURL.absoluteString
+                    .replacingOccurrences(of: webpageHost.rawValue, with: webpageHost.replacement.rawValue)
+                page.dispatchMessageToScript(withName: "redirectPage", userInfo: ["url": redirectURL])
             }
         }
     }
