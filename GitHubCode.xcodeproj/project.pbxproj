@@ -160,9 +160,9 @@
 				2CF8E8162746D67200420BFD /* yarn.lock */,
 				6015D12F2746431300782DB9 /* README.md */,
 				2C3A26B32746E87000AD27FD /* Frameworks */,
-				60AB1075274591BE00BC06F1 /* GitHubCode */,
 				60AB1074274591BE00BC06F1 /* Products */,
 				6047BEF32746411F0083B111 /* Scripts */,
+				60AB1075274591BE00BC06F1 /* Shared */,
 				6047BEE827463EF00083B111 /* Targets */,
 			);
 			sourceTree = "<group>";
@@ -176,7 +176,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		60AB1075274591BE00BC06F1 /* GitHubCode */ = {
+		60AB1075274591BE00BC06F1 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
 				2C3A26B62746EDE100AD27FD /* Constants.swift */,
@@ -186,7 +186,7 @@
 				2C3A26B92746FBCF00AD27FD /* Enumerations */,
 				60AB107C274591C600BC06F1 /* Preview Content */,
 			);
-			path = GitHubCode;
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		60AB107C274591C600BC06F1 /* Preview Content */ = {
@@ -503,7 +503,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GitHubCode/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Shared/Preview Content\"";
 				DEVELOPMENT_TEAM = DXUKH9VF73;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -531,7 +531,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GitHubCode/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Shared/Preview Content\"";
 				DEVELOPMENT_TEAM = DXUKH9VF73;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
