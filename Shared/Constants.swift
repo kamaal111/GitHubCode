@@ -16,5 +16,5 @@ enum Constants {
         return identifier
     }()
 
-    static let appGroup = bundleIdentifier.appending("Group")
+    static let appGroup = "group.\(bundleIdentifier)"
 }
